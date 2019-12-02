@@ -301,9 +301,6 @@ section.banner img {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.grid-cell .title a:hover {
-  color: #123aff;
-}
 .tag-list-link {
   display: block;
   height: 24px;
@@ -315,7 +312,8 @@ section.banner img {
   text-transform: uppercase;
 }
 .tag-list-link:hover {
-  border-color: #123aff;
+  background-color: #000;
+  color: #fff;
 }
 .grid-cell p.abstract {
   font-size: 16px;
@@ -345,7 +343,7 @@ section.banner img {
   font-weight: 600;
 }
 .paginator .page-number.current {
-  background-color: #123aff;
+  background-color: #000;
   color: #fff;
   cursor: pointer;
 }
@@ -358,6 +356,7 @@ section.banner img {
   color: #123aff;
 }
 .paginator .page-number.current:hover {
+  background-color: #123aff;
   color: #fff;
 }
 section.info {
@@ -429,4 +428,11 @@ section.info {
 }
 #vcomments {
   padding: 32px 16px;
+}
+.place {
+  font-size: 40px;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

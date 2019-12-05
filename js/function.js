@@ -13,7 +13,6 @@ $(function() {
 	checkMenu(char);
 	$(document).scroll(function() {
 		var top = $(document).scrollTop();
-		console.log(top);
 		if (0<top&&top<160) {
 			$('header .large').css('height',160-top/160*80);
 			$('header').css('background-color','rgba(255,255,255,1)');

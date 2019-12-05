@@ -140,30 +140,41 @@ a:hover {
 body {
   background: #fff;
 }
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+section {
+  margin-bottom: 32px;
+}
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 99;
+}
+header .large {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  position: fixed;
   width: 1200px;
   height: 160px;
-  top: 0;
-  left: 50%;
-  margin-left: -600px;
+  margin: auto;
   justify-content: space-between;
-  background-color: rgba(255,255,255,0.8);
   align-items: center;
-  z-index: 99;
+  transition: all 0.6s ease 0s;
 }
 header .logo p {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 1000;
   text-transform: uppercase;
 }
 header .logo span {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 200;
   color: #999;
 }
@@ -196,16 +207,37 @@ header .menu a:after {
 }
 header .menu a:hover,
 a.active {
-  color: #123aff;
+  color: #000;
 }
 header .menu a:hover:after,
 header .menu a.active:after {
   transform: scaleX(1);
   opacity: 1;
 }
+footer {
+  border-top: 1px solid #f8f8f8;
+}
+footer .large {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-size: 10px;
+  color: #999;
+}
 .wrap {
-  width: 1200px;
+  width: 100%;
   margin: 160px auto 0;
+}
+.large {
+  width: 1200px;
+  margin: auto;
+}
+.middle {
+  width: 768px;
+  margin: auto;
 }
 section.cover {
   display: block;
@@ -406,6 +438,12 @@ section.info {
   display: block;
   width: 32px;
   height: 32px;
+  color: #000;
+}
+.text .contact a.icon:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
 }
 .text .contact a.icon:before {
   line-height: 32px;
@@ -419,15 +457,18 @@ section.info {
 }
 .info .pic {
   display: block;
-  width: 450px;
-  height: 600px;
+  width: 240px;
+  height: 640px;
   background-image: url("https://i.loli.net/2019/11/28/gVl5yQrfcmSMN3W.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
+.comment {
+  background-color: #f8f8f8;
+}
 #vcomments {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 .place {
   font-size: 40px;
@@ -435,4 +476,127 @@ section.info {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.article .cover {
+  width: 100%;
+  height: 480px;
+}
+.article .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article .cover .text {
+  width: 1200px;
+  height: 480px;
+  position: absolute;
+  margin-top: -480px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.3);
+}
+.article .cover .text p.title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 1000;
+}
+.article .cover .text span.time {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  padding: 4px;
+}
+.article .cover .text ul {
+  margin: 0;
+}
+.article .cover .article-tag-list-link {
+  display: block;
+  margin-bottom: 16px;
+  padding: 8px 24px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  border-top: 1px solid #fff;
+}
+.article .cover .article-tag-list-link:hover {
+  text-decoration: none;
+}
+.article .content {
+  margin-bottom: 16px;
+}
+.article p,
+.article table {
+  line-height: 24px;
+  margin: 24px 0;
+  font-size: 16px;
+}
+.article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 32px;
+  margin: 32px 0;
+}
+.article a {
+  color: #123aff;
+}
+.article a:hover {
+  text-decoration: underline;
+}
+ul,
+ol,
+dl {
+  margin: 24px 0;
+}
+.article img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+iframe {
+  border: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  border-bottom: 3px solid #ededed;
+  padding-bottom: 8px;
+}
+td {
+  border-bottom: 1px solid #ededed;
+  padding: 8px 0;
+}
+blockquote {
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 20px;
+  margin: 24px 0px;
+  padding: 16px 32px;
+  text-align: center;
+  font-style: oblique;
+}
+figure {
+  margin: 24px 0px;
+  padding: 0 16px;
+  background-color: #000;
+  color: #0c0;
+  font-size: 16px;
+}
+figure th,
+figure td {
+  border: 0;
 }

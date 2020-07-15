@@ -202,7 +202,7 @@ html body .container .navbar {
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  background-image: linear-gradient(60deg, rgba(249,249,249,0.6), #f9f9f9), url("https://i.loli.net/2019/11/28/gVl5yQrfcmSMN3W.png");
+  background-image: linear-gradient(90deg, rgba(249,249,249,0.6), #f9f9f9), url("https://i.loli.net/2019/11/28/gVl5yQrfcmSMN3W.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -931,6 +931,46 @@ html body .container .content .list-view .comment {
   -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+html body .container .content .grid-view .card .banggood {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236,107,46,0.96)), to(rgba(35,24,21,0.81)));
+  background-image: linear-gradient(0deg, rgba(236,107,46,0.96), rgba(35,24,21,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .newchic {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255,22,94,0.96)), to(rgba(253,77,77,0.81)));
+  background-image: linear-gradient(0deg, rgba(255,22,94,0.96), rgba(253,77,77,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .mieye {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(63,168,244,0.96)), to(rgba(63,168,244,0.81)));
+  background-image: linear-gradient(0deg, rgba(63,168,244,0.96), rgba(63,168,244,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .fishing {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(248,76,29,0.96)), to(rgba(249,114,30,0.81)));
+  background-image: linear-gradient(0deg, rgba(248,76,29,0.96), rgba(249,114,30,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .topsales {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(93,139,255,0.96)), to(rgba(93,139,255,0.81)));
+  background-image: linear-gradient(0deg, rgba(93,139,255,0.96), rgba(93,139,255,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .brain {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,38,255,0.96)), to(rgba(119,0,255,0.81)));
+  background-image: linear-gradient(0deg, rgba(0,38,255,0.96), rgba(119,0,255,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .tft {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(39,113,121,0.96)), to(rgba(67,51,24,0.81)));
+  background-image: linear-gradient(0deg, rgba(39,113,121,0.96), rgba(67,51,24,0.81));
+  color: #fff;
+}
+html body .container .content .grid-view .card .moonplate {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(25,44,124,0.96)), to(rgba(10,1,74,0.81)));
+  background-image: linear-gradient(0deg, rgba(25,44,124,0.96), rgba(10,1,74,0.81));
+  color: #fff;
 }
 @media only screen and (max-width: 1600px) {
   html body .container .content .list-view {

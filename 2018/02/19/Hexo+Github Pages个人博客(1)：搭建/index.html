@@ -9,42 +9,42 @@
     <title>Limlift</title>
 </head>
 	<body>
-		<header>
-    <div class="large">
-    <a href="/" class="logo">
+		<div class="container">
+			<div class="navbar" style="background-image: linear-gradient(90deg,rgba(249,249,249,.36),rgba(249,249,249,1)),url(https://i.loli.net/2020/07/09/ZVrkOwUGuI9RBmx.jpg);">
+    <div class="view">
+      <div class="title">
         <p>Limlift</p>
-        <span>林立的个人博客</span>
-    </a>
-    <div class="menu">
+        <span>设计师阿立的个人主页</span>
+      </div>
+      <div class="menu">
         
-        <a href="/archives" data="/archives">Archives博客</a>
+		<a href="/archives" data="/archives" >
+			Article文字
+		</a>
         
-        <a href="/portfolio" data="/portfolio">Portfolio作品集</a>
+		<a href="/portfolio/portfolio.html" data="/portfolio/portfolio.html" >
+			Portfolio作品
+		</a>
         
-        <a href="/about" data="/about">About关于我</a>
+		<a href="/about/about.html" data="/about/about.html" >
+			About关于
+		</a>
         
+      </div>
     </div>
-    </div>
-</header>
-		<div class="wrap">
-	<div class="article">
-	
-	<div class="large">
-		<div class="cover" background-url="">
-			<img src="https://i.loli.net/2019/12/02/2yJwa67uVjOh9Xe.png">
-			<div class="text">
+</div>
+<div class="content">
+	<div class="list-view">
+		<div class="card article">
+			<div class="header">
 				<p class="title">Hexo+GitHub Pages个人博客(1):搭建</p>
-				
+				<span class="tag">
     <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BB%A3%E7%A0%81/" rel="tag">代码</a></li></ul>
-
-				<span class="time">2018-02-19</span>
+</span>
+				<p class="date">- 2018.02.19 -</p>
 			</div>
-		</div>
-	</div>
-	
-	<div class="content">
-		<div class="middle">
-		<p>对于喜欢折腾个人博客的人来说，一个可玩性强的博客/博客平台才是最适合自己的。可玩性包括自定义主题/功能，现有的通用型博客平台在自定义这一块上基本没法满足可玩性，太专业的博客系统对于非专业型人才来说门槛又比较高，并且管理繁杂。因此这里推荐一种比较简单的搭建个人博客方式：Hexo+GitHub Pages。</p>
+			<div class="paper">
+				<p>对于喜欢折腾个人博客的人来说，一个可玩性强的博客/博客平台才是最适合自己的。可玩性包括自定义主题/功能，现有的通用型博客平台在自定义这一块上基本没法满足可玩性，太专业的博客系统对于非专业型人才来说门槛又比较高，并且管理繁杂。因此这里推荐一种比较简单的搭建个人博客方式：Hexo+GitHub Pages。</p>
 <a id="more"></a>
 
 <blockquote>
@@ -140,29 +140,22 @@
 <p>博客存放目录下的「Source」-「_posts」下面存放的都是博客文章，你也可以直接在这里删除你不需要的文章，例如系统自动生成的「Hello World」文章</p>
 </blockquote>
 
+			</div>
 		</div>
-	</div>
-	<div class="comment">
-		<div class="middle">
+		<div class="card comment">
 			<div id="vcomments"></div>
-			<script>
-			  new Valine({
-			    el: '#vcomments',
-			    appId: 'wo2xlmynW61wdXytucIbu3G9-gzGzoHsz',
-			    appKey: 'oVLFvq8HaIzHa4FIW1xtYRsb'
-			  })
-			</script>	
+				<script>
+				  new Valine({
+					el: '#vcomments',
+					appId: 'wo2xlmynW61wdXytucIbu3G9-gzGzoHsz',
+					appKey: 'oVLFvq8HaIzHa4FIW1xtYRsb'
+				  })
+				</script>	
 		</div>
 	</div>
-	</div>
-	<footer>
-	<div class="large">
-		<p>Power By <a href="https://hexo.io" target="
-		_blank" style="font-weight: bold;">Hexo</a>.</p>
-		<p>ironstrawman@gmail.com</p>
-	</div>
-</footer>
 </div>
+
+		</div>		
 	</body>
-	<script type="text/javascript" src="/js/function.js"></script>
+	<script src="/js/function.js"></script>
 </html>

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Limlift's Website</title>
+    </head>
+<body class="page deep">
+    <div class="navbar">
+        <div class="title">
+            <a href="index.html" class="icon return"></a>
+            <p>Banggood A.I.</p>
+            <span>A.I. Platform · Website</span>
+        </div>
+    </div>
+    <div class="container">
+        <section><img src="images/05/5-1.png" alt=""></section>
+        <section><img src="images/05/5-2.png" alt=""></section>
+        <section><img src="images/05/5-3.png" alt=""></section>
+        <section><img src="images/05/5-4.png" alt=""></section>
+        <section><img src="images/05/5-5.png" alt=""></section>
+        <section><img src="images/05/5-6.png" alt=""></section>
+        <section><img src="images/05/5-7.png" alt=""></section>
+    </div>
+    <a href="javascript:void(0);" onclick="BackTop();" class="top icon"></a>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    function BackTop(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+    window.onscroll = function(){
+        var x = document.documentElement.scrollTop || document.body.scrollTop;
+        if(x > 144){
+            document.querySelector('.top').style.display='block';
+        }else{
+            document.querySelector('.top').style.display='none';
+        }
+    }
+</script>
+</body>
+</html>

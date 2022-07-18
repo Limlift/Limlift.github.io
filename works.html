@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Limlift's Website</title>
+    </head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <a href="index.html" class="icon return"></a>
+            <p>Limlift's Works</p>
+        </div>
+        <div class="menu">
+            <span>These are all my work.😊</span>
+        </div>
+    </div>
+  <div class="container">
+    <div class="port swiper">
+        <div class="swiper-wrapper">
+            <a href="javascript:void(0);" class="swiper-slide"><img src="images/card1.png" alt=""></a>
+            <a href="javascript:void(0);" class="swiper-slide"><img src="images/card2.png" alt=""></a>
+            <a href="javascript:void(0);" class="swiper-slide"><img src="images/card3.png" alt=""></a>
+            <a href="javascript:void(0);" class="swiper-slide"><img src="images/card4.png" alt=""></a>
+            <a href="javascript:void(0);" class="swiper-slide"><img src="images/card5.png" alt=""></a>
+        </div>
+        <div class="switch swiper-button-prev"></div>
+        <div class="switch swiper-button-next"></div>
+        </div>
+  </div>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    function fuck(argument) {
+        // body...
+    }
+    var mySwiper = new Swiper ('.swiper', {
+    direction: 'horizontal', 
+    loop: true, 
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView :3.5,
+    spaceBetween : 20,
+    centerInsufficientSlides: true,
+    mousewheel: true,
+  })        
+</script>
+</body>
+</html>

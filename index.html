@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Limlift's Website</title>
+    </head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <a href="javascript:void(0);" class="icon logo"></a>
+            <p>Limlift's Website</p>
+        </div>
+        <div class="menu">
+            <a href="works.html">Works.</a>
+            <a href="about.html">About.</a>
+        </div>
+    </div>
+  <div class="container">
+    <div class="desc">
+        <p class="title">Who am I?</p>
+        <p class="info">Hi, I'm Limlift.<br/>A self-motivated designer.<br/>Fans for Minimalism.<br/>Excellent at Logical interaction thinking.</p>
+    </div>
+    <div class="port swiper">
+        <div class="swiper-wrapper">
+            <a href="01NC.html" class="swiper-slide"><img src="images/card1.png" alt=""></a>
+            <a href="02BG.html" class="swiper-slide"><img src="images/card2.png" alt=""></a>
+            <a href="03TS.html" class="swiper-slide"><img src="images/card3.png" alt=""></a>
+            <a href="04TC.html" class="swiper-slide"><img src="images/card4.png" alt=""></a>
+            <a href="05AI.html" class="swiper-slide"><img src="images/card5.png" alt=""></a>
+        </div>
+        <div class="switch swiper-button-prev"></div>
+        <div class="switch swiper-button-next"></div>
+        </div>
+  </div>
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    function fuck(argument) {
+        // body...
+    }
+    var mySwiper = new Swiper ('.swiper', {
+    direction: 'horizontal', 
+    // loop: true, 
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView :'1',
+    centeredSlides: true,
+    centerInsufficientSlides: true,
+    mousewheel: true,
+    autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+    },
+    effect: 'cards',
+  })        
+</script>
+</body>
+</html>

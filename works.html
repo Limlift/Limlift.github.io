@@ -38,6 +38,15 @@
     function fuck(argument) {
         // body...
     }
+    var swiperCount;
+    var width = document.body.offsetWidth;
+    if(width>768){
+        swiperCount = (width-100)/380;
+    }else if(width<768&&width>480){
+        swiperCount = (width-20)/380;
+    }else if(width<=480){
+        swiperCount = 1;
+    }
     var mySwiper = new Swiper ('.swiper', {
     direction: 'horizontal', 
     loop: true, 
@@ -45,7 +54,7 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView :3.5,
+    slidesPerView :swiperCount,
     spaceBetween : 20,
     centerInsufficientSlides: true,
     mousewheel: true,
